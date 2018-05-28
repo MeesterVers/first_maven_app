@@ -5,7 +5,7 @@ import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 
-@WebServlet(urlPatterns = "/DynamicServlet.do")
+@WebServlet(urlPatterns = "/DynamicServletNaam.do")
 public class DynamicServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 	throws ServletException, IOException {
