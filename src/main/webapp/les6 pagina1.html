@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Les 6</title>
+</head>
+<body>
+<input type="text" id="label" onkeyup="onKeyUp()">
+</body>
+<script>
+    function onKeyUp() {
+        var element = document.getElementById("label").value;
+        window.localStorage.setItem("label", element);
+    }
+</script>
+</html>

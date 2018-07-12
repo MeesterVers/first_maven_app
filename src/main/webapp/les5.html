@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" media="only screen and (min-width: 700px)"
+	href="grid.css">
+<link rel="stylesheet" type="text/css" href="les5.css">
+<script type="text/javascript" src="les5.js"></script>
+<meta charset="UTF-8">
+<title>Les 5</title>
+</head>
+<body>
+	<div id="frame">
+		<div id="login">
+			<p id="login" class="login">Login</p>
+			<form id="formuser" class="form">
+			<table width="400px">
+				<tr>
+					<td><label>Gebruikersnaam: </label></td>
+					<td><input id="gebruikersnaam" name="user" type="text"></td>
+				</tr>
+				<tr>
+					<td><label>Wachtwoord: </label></td>
+					<td><input id="wachtwoord" name="pass" type="text"></td>
+				</tr>
+			</table>
+			<input type="button" id="inloggen" value="Inloggen"/>
+			</form>
+		</div>
+		<div id="myLocation">
+			<p id="location" class="myLocation">Mijn locatie</p>
+			<table width="400">
+				<td>
+					<p>Landcode:</p>
+					<p>Land:</p>
+					<p>Regio:</p>
+					<p>Stad:</p>
+					<p>Postcode:</p>
+					<p>Latitude:</p>
+					<p>Longitude:</p>
+					<p>IP:</p>
+				</td>
+				<td>
+					<p id="country"></p>
+					<p id="country_name"></p>
+					<p id="region"></p>
+					<p id="city" style=""></p>
+					<p id="postal"></p>
+					<p id="latitude"></p>
+					<p id="longitude"></p>
+					<p id="ip"></p>
+				</td>
+			</table>
+		</div>
+		<div id="weatherInfo">
+			<p class="headers" id="weer"></p>
+			<table width="245">
+				<tr></tr>
+				<td>
+					<p>Temperatuur:</p>
+					<p>Luchtvochtigheid:</p>
+					<p>Windsnelheid:</p>
+					<p>Windrichting:</p>
+					<p>Zonsopgang:</p>
+					<p>Zonsondergang:</p>
+				</td>
+				<td>
+					<p id="temp"></p>
+					<p id="humidity"></p>
+					<p id="speed"></p>
+					<p id="deg"></p>
+					<p id="sunrise"></p>
+					<p id="sunset"></p>
+				</td>
+			</table>
+		</div>
+		<div id="addCountry" style="overflow-x: auto;">
+			<p class="headers">Voeg een nieuw land toe</p>
+			<form id="formOpslaan">
+				<table width="400px">
+					<tr>
+						<td><label>Code: </label></td>
+						<td><input id="codeInput2" name="code2" type="text"></td>
+					</tr>
+					<tr>
+						<td><label>Naam: </label></td>
+						<td><input id="landInput2" name="name2" type="text"></td>
+					</tr>
+					<tr>
+						<td><label>Hoofdstad: </label></td>
+						<td><input id="hoofdstadInput2" name="capital2" type="text"></td>
+					</tr>
+					<tr>
+						<td><label>Regio: </label></td>
+						<td><input id="regioInput2" name="region2" type="text"></td>
+					</tr>
+					<tr>
+						<td><label>Oppervlakte: </label></td>
+						<td><input id="oppervlakteInput2" name="surface2"
+							type="number"></td>
+					</tr>
+					<tr>
+						<td><label>Inwoners: </label></td>
+						<td><input id="inwonersInput2" name="population2"
+							type="number"></td>
+					</tr>
+				</table>
+				<input id="opslaan" value="Opslaan" type="button">
+			</form>
+		</div>
+		<div id="countryList" style="overflow-x: auto;">
+			<p class="headers">Beschikbare vakantiebestemmingen</p>
+			<form id="formWijzigen">
+				<input id="codeInput" name="code" type="text" disabled> <input
+					id="landInput" name="name" type="text"> <input
+					id="hoofdstadInput" name="capital" type="text"> <input
+					id="regioInput" name="region" type="text"> <input
+					id="oppervlakteInput" name="surface" type="number"> <input
+					id="inwonersInput" name="population" type="number"> <input
+					id="wijzigen" value="Opslaan" type="button">
+			</form>
+			<table id="tabel" class="countryList">
+				<tr style="text-align: left">
+					<th>Land</th>
+					<th>Hoofdstad</th>
+					<th>Regio</th>
+					<th>Oppervlakte</th>
+					<th>Inwoners</th>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

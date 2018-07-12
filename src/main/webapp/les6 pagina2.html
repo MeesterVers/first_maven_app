@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Les 6</title>
+</head>
+<body>
+<label id="label">Label</label>
+</body>
+<script>
+    window.addEventListener("storage", function(event) {
+        document.getElementById("label").innerHTML = event.newValue;
+    });
+</script>
+</html>
