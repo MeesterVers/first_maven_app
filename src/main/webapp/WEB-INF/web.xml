@@ -10,7 +10,7 @@
 
 		<init-param>
 			<param-name>jersey.config.server.provider.packages</param-name>
-			<param-value>nl.hu.v1.wac.firstapp.webservices</param-value>
+			<param-value>l.hu.v1wac.firstapp.webservices</param-value>
 		</init-param>
 		
 		<init-param>
